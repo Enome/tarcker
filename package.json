@@ -1,0 +1,34 @@
+{
+  "name": "tarcker",
+  "version": "0.0.0",
+  "description": "This commandline Node.js program lets you tar a directory with a Dockerfile to create and run a container.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dockerfile",
+    "docker",
+    "tar",
+    "stream"
+  ],
+  "author": "Geert Pasteels <geert.pasteels@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "~0.2.9",
+    "colors": "~0.6.2",
+    "commander": "~2.1.0",
+    "tar": "~0.1.18",
+    "lodash": "~2.4.1",
+    "docker-simple-wrapper": "0.0.0"
+  },
+  "devDependencies": {},
+  "bin": { "tarcker" : "index.js" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Enome/tarcker"
+  },
+  "bugs": {
+    "url": "https://github.com/Enome/tarcker/issues"
+  }
+}
