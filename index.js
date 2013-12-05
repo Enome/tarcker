@@ -14,6 +14,10 @@ if (!commander.name) {
   return console.log('--->'.red, 'Please specify a name (-n foobar or --name foobar)');
 }
 
+if (process.stdin.isTTY) {
+  return console.log('--->'.red, 'Please pipe a tar directory (tar -c . | tarcker -n foobar)');
+}
+
 var state = {
   name: commander.name,
   stream: process.openStdin(),
