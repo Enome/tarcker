@@ -109,6 +109,7 @@ var functions = {
     var options = {
       method: 'POST',
       path: '/containers/create?name=' + state.name,
+      headers: { 'Content-Type': 'application/json' }, 
       body: body,
     };
 
@@ -131,6 +132,7 @@ var functions = {
     var options = {
       method: 'POST',
       path: '/containers/' + state.name + '/start',
+      headers: { 'Content-Type': 'application/json' }, 
       body: config,
     };
 
