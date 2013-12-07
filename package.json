@@ -1,6 +1,6 @@
 {
   "name": "tarcker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This commandline Node.js program lets you tar a directory with a Dockerfile to create and run a container.",
   "main": "index.js",
   "scripts": {

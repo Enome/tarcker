@@ -132,9 +132,12 @@ var functions = {
     var options = {
       method: 'POST',
       path: '/containers/' + state.name + '/start',
-      headers: { 'Content-Type': 'application/json' }, 
-      body: config,
     };
+
+    if (config) {
+      options.headers = { 'Content-Type': 'application/json' };
+      options.body = config;
+    }
 
     docker(options, function (error, response, body) {
 
