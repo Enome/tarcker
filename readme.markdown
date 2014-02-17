@@ -11,7 +11,7 @@ npm install tarcker -g
 ## Usage
 
 ```sh
-tar -C nodejs -c . | tracker --name foobar
+tar -C nodejs -c . | tarcker --name foobar
 ```
 
 This will create the image `image-foobar`, create and start (without args) the container `foobar`.
